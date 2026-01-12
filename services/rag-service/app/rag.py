@@ -13,7 +13,7 @@ load_dotenv()
 client = OpenAI()  # reads OPENAI_API_KEY from env
 
 MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-SEED_DOCS_DIR = os.getenv("SEED_DOCS_DIR", "../../eval/datasets/seed_docs")
+SEED_DOCS_DIR = os.getenv("SEED_DOCS_DIR", "../../../eval/datasets/seed_docs")
 TOP_K = int(os.getenv("TOP_K", "5"))
 
 
